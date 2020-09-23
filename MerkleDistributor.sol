@@ -131,6 +131,9 @@ contract MerkleDistributor is IMerkleDistributor {
     // This is a packed array of booleans.
     mapping(uint256 => uint256) private claimedBitMap;
 
+    // Deployed with 2 Constructor Arguments:
+    // Arg [0] : 0000000000000000000000001f9840a85d5af5bf1d1762f925bdaddc4201f984
+    // Arg [1] : c8500f8e2fcf3c9a32880e1b973fb28acc88be35787a8abcf9981b2b65dbdeb5
     constructor(address token_, bytes32 merkleRoot_) public {
         token = token_;
         merkleRoot = merkleRoot_;

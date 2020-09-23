@@ -22,6 +22,8 @@ contract FeeTo {
     }
     mapping(address => PairAllowState) public pairAllowStates;
 
+    // 1 Constructor Arguments found :
+    // Arg [0] : 0000000000000000000000001a9c8182c09f50c8318d769245bea52c32be35bc
     constructor(address owner_) public {
         owner = owner_;
     }

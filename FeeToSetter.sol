@@ -13,6 +13,11 @@ contract FeeToSetter {
 
     address public owner;
 
+    // 4 Constructor Arguments found :
+    // Arg [0] : 0000000000000000000000005c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f
+    // Arg [1] : 00000000000000000000000000000000000000000000000000000000603c2e80
+    // Arg [2] : 0000000000000000000000001a9c8182c09f50c8318d769245bea52c32be35bc
+    // Arg [3] : 000000000000000000000000daf819c2437a82f9e01f6586207ebf961a7f0970
     constructor(address factory_, uint vestingEnd_, address owner_, address feeTo_) public {
         require(vestingEnd_ > block.timestamp, 'FeeToSetter::constructor: vesting must end after deployment');
         factory = factory_;

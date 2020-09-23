@@ -96,6 +96,9 @@ contract Ownable {
     /**
      * @dev Initializes the contract setting the deployer as the initial owner.
      */
+    // Deployed with 2 Constructor Arguments:
+    // Arg [0] : 0000000000000000000000001f9840a85d5af5bf1d1762f925bdaddc4201f984
+    // Arg [1] : 000000000000000000000000000000000000000000000000000000005f63f880
     constructor () internal {
         _owner = msg.sender;
         emit OwnershipTransferred(address(0), _owner);

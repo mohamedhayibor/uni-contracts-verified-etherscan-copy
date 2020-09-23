@@ -267,6 +267,10 @@ contract Uni {
     /// @notice The standard EIP-20 approval event
     event Approval(address indexed owner, address indexed spender, uint256 amount);
 
+    // Deployed with 3 Constructor Arguments:
+    // Arg [0] : 00000000000000000000000041653c7d61609d856f29355e404f310ec4142cfb
+    // Arg [1] : 00000000000000000000000041653c7d61609d856f29355e404f310ec4142cfb
+    // Arg [2] : 0000000000000000000000000000000000000000000000000000000065920080
     /**
      * @notice Construct a new Uni token
      * @param account The initial account to grant all the tokens

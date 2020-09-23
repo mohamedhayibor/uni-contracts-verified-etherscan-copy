@@ -132,6 +132,9 @@ contract GovernorAlpha {
     /// @notice An event emitted when a proposal has been executed in the Timelock
     event ProposalExecuted(uint id);
 
+    // Deployed with 2 Constructor Arguments:
+    // Arg [0] : 0000000000000000000000001a9c8182c09f50c8318d769245bea52c32be35bc
+    // Arg [1] : 0000000000000000000000001f9840a85d5af5bf1d1762f925bdaddc4201f984
     constructor(address timelock_, address uni_) public {
         timelock = TimelockInterface(timelock_);
         uni = UniInterface(uni_);
